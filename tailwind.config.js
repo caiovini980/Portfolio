@@ -4,8 +4,24 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        'light': {
+          100: '#F9F8F6',
+          200: '#EFE9E3',
+
+        },
+        'dark': {
+          100: '#0C0C0C',
+          200: '#2B2A2A',
+
+        },
+
+        
+      },
+
       fontFamily: {
         Roboto: ["Roboto Mono", "serif"],
+        Rubik: ["Rubik", "serif"]
       }
     },
   },
