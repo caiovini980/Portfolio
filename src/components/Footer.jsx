@@ -40,12 +40,12 @@ function Footer() {
                                 </div>
                             </div>
                             <div className="col-span-1 flex justify-end items-end pb-8">
-                                <a href="" className="font-semibold text-stone-400 dark:text-stone-500 hover:text-light-100 hover:dark:text-dark-100">
+                                <a href="https://www.linkedin.com/in/caioaguiar22/" className="font-semibold text-stone-400 dark:text-stone-500 hover:text-light-100 hover:dark:text-dark-100">
                                     <div className="transition-colors duration-300 ease-in-out">
                                         LinkedIn
                                     </div>
                                 </a>
-                                <a href="" className="font-semibold text-stone-400 pl-5 dark:text-stone-500 hover:text-light-100 hover:dark:text-dark-100">
+                                <a href="https://github.com/caiovini980" className="font-semibold text-stone-400 pl-5 dark:text-stone-500 hover:text-light-100 hover:dark:text-dark-100">
                                     <div className="transition-colors duration-300 ease-in-out">
                                         Github
                                     </div>
