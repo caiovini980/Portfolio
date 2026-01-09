@@ -72,17 +72,18 @@ function Header() {
               <div className='flex h-full'>
                 {/* Left side */}
                 <a href="#" className="flex flex-1 font-semibold justify-start items-center text-2xl text-dark-200 dark:text-light-100 hover:text-dark-100 hover:dark:text-stone-500">
+                    <img src="./logo.png" alt="" className='h-8 pr-4'/>
                     <div className="transition-colors duration-300 ease-in-out">
                       Caio Aguiar
                     </div>
                 </a>
 
                 {/* Right side */}
-                <div className='flex flex-1 justify-end items-center'>
+                <div className='flex flex-1 pr-6 justify-end items-center'>
                     <button
                         type="button"
                         onClick={ handleThemeSwitch }
-                        className="flex justify-center items-center h-14 w-14 bg-violet-400 dark:bg-orange-400 text-lg p-1 rounded-md transition-transform duration-300 ease-in-out hover:scale-110"
+                        className="flex justify-center items-center h-14 w-14 bg-purple-400 dark:bg-amber-400 text-lg p-1 rounded-md transition-transform duration-300 ease-in-out hover:scale-110"
                     >
                         {theme === Themes.DARK ? sunIcon : moonIcon}
                     </button>

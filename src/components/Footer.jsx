@@ -14,7 +14,7 @@ function Footer() {
                                 <div className="h-full">
                                     <div className="row-span-1 pb-8 flex items-start">
                                         {/* Title */}
-                                        <span className="inline-block font-bold text-3xl bg-gradient-to-tr from-violet-600 to-amber-400 bg-clip-text text-transparent">
+                                        <span className="inline-block font-bold text-3xl bg-gradient-to-tr from-amber-400 to-violet-600 bg-clip-text text-transparent">
                                             Awesome to see you here!
                                         </span>
                                     </div>
@@ -27,7 +27,7 @@ function Footer() {
                                             <p className="pt-8">
                                                 All design credits to 
                                                 <span className="pl-1 pr-1">
-                                                    <a href={'https://www.leah-lee.com/'} className="inline-block font-bold bg-gradient-to-tr from-violet-700 to-amber-400 bg-clip-text text-transparent">
+                                                    <a href={'https://www.leah-lee.com/'} className="inline-block font-bold bg-gradient-to-tr from-amber-400 to-violet-600 bg-clip-text text-transparent">
                                                         <div className="hover:inline-block hover:bg-clip-text hover:text-transparent hover:bg-violet-700">
                                                             Leah Lee's
                                                         </div>

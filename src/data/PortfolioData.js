@@ -1,7 +1,7 @@
 export default [
     {
         Title: "Tab Refresh",
-        ImageUrl: "/assets/images/mf-doom.png",
+        ImageUrl: "./images/mf-doom.png",
         Stack: ["Roblox", "Lua", "Tools", "UI"],
         Period: "Duolingo - Shipped - 2025",
         Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -10,7 +10,7 @@ export default [
 
     {
         Title: "Samsung Space Tycoon",
-        ImageUrl: "/assets/Space-Tycoon.jpg",
+        ImageUrl: "./images/Space-Tycoon.jpg",
         Stack: ["Roblox", "Lua", "3D Math", "UI"],
         Period: "2022",
         Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -19,7 +19,7 @@ export default [
 
     {
         Title: "Star Jump",
-        ImageUrl: "/assets/star jump.jpg",
+        ImageUrl: "./images/star jump.jpg",
         Stack: ["Unity", "C#", "Mobile"],
         Period: "2021",
         Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
@@ -28,7 +28,7 @@ export default [
 
     {
         Title: "Developer Portfolio",
-        ImageUrl: "/assets/PortfolioThumbnail.png",
+        ImageUrl: "./images/PortfolioThumbnail.png",
         Stack: ["React", "Tailwind", "Vite"],
         Period: "2025",
         Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -37,7 +37,7 @@ export default [
 
     {
         Title: "Developer Portfolio",
-        ImageUrl: "/assets/placeholder-pink.jpg",
+        ImageUrl: "./images/placeholder-pink.jpg",
         Stack: ["React", "Tailwind", "Vite"],
         Period: "2025",
         Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -46,7 +46,7 @@ export default [
 
     {
         Title: "Furry World",
-        ImageUrl: "/assets/furryworld.png",
+        ImageUrl: "./images/furryworld.png",
         Stack: ["Unity", "C#", "Mirror"],
         Period: "2021",
         Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
