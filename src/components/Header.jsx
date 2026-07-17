@@ -43,33 +43,30 @@ function Header() {
     const [theme, setTheme] = useState(null);
 
     useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme: dark').matches) {
-        setTheme(Themes.DARK);
-        }
-        else {
-        setTheme(Themes.LIGHT)
-        }
+        setTheme(Themes.LIGHT);
     }, []);
 
     const handleThemeSwitch = () => {
-        setTheme(theme === Themes.DARK ? Themes.LIGHT : Themes.DARK);
+        setTheme(theme === Themes.LIGHT ? Themes.DARK : Themes.LIGHT);
     }
 
     useEffect(() => {
       if (theme === Themes.DARK) {
+        document.documentElement.classList.remove(Themes.LIGHT);
         document.documentElement.classList.add(Themes.DARK);
       }
       else
       {
         document.documentElement.classList.remove(Themes.DARK);
+        document.documentElement.classList.add(Themes.LIGHT);
       }
     }, [theme]);
 
     return(
         <>
             {/* Background */}
-            <div className="sticky top-0 pb-16 pr-14 pl-[5.4rem] pt-[1.7rem] bg-transparent dark:bg-transparent">
-              <div className='flex h-full'>
+            <div className="sticky top-0 p-10 md:pb-16 pr-14 pl-[5.4rem] pt-[1.7rem] bg-light-100 dark:bg-dark-100 md:bg-transparent md:dark:bg-transparent">
+              <div className='flex'>
                 {/* Left side */}
                 <a href="#" className="flex flex-1 font-semibold justify-start items-center text-2xl text-dark-200 dark:text-light-100 hover:text-dark-100 hover:dark:text-stone-500">
                     <img src="./logo.png" alt="" className='h-8 pr-4'/>
@@ -85,7 +82,7 @@ function Header() {
                         onClick={ handleThemeSwitch }
                         className="flex justify-center items-center h-14 w-14 bg-purple-400 dark:bg-amber-400 text-lg p-1 rounded-md transition-transform duration-300 ease-in-out hover:scale-110"
                     >
-                        {theme === Themes.DARK ? sunIcon : moonIcon}
+                      {theme === Themes.DARK ? sunIcon : moonIcon}
                     </button>
                 </div>
               </div>

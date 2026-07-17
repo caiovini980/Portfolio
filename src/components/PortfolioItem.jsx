@@ -11,7 +11,7 @@ function PortfolioItem({ title, imageUrl, period, link, description }) {
                         <img 
                             src={ imageUrl } 
                             alt={ title }
-                            className="w-full h-36 md:h-[445px] md:w-[445px] object-cover"
+                            className="w-full h-50 md:h-[445px] md:w-[445px] object-cover"
                         />
                     </div>
                 </a>
@@ -34,7 +34,7 @@ function PortfolioItem({ title, imageUrl, period, link, description }) {
                     <div className="flex-1 items-center">
                         <p className="text-normal mt-3 text-stone-500 dark:text-stone-400">{ description }</p>
                     </div>
-                </div>
+                </div> 
             </div>
         </>
     )

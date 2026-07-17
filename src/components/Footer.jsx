@@ -4,11 +4,11 @@ function Footer() {
     return(
         <>
             {/* Background */}
-            <div className="pt-10 pb-5 flex-grow bg-stone-800 dark:bg-stone-100">
+            <div className="pt-10 pb-5 flex-grow-1 bg-stone-800 dark:bg-stone-100">
                 {/* Content */}
                 <div className="flex justify-center">
                     <div className="w-[90%] md:w-[916px]">
-                        <div className="grid grid-cols-2 h-56">
+                        <div className="grid grid-cols-2">
                             <div className="col-span-1 flex flex-col">
                                 {/* Left side */}
                                 <div className="h-full">
