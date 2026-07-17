@@ -11,7 +11,6 @@ function Content() {
             {/* Sections */}
                 <div className="grid grid-rows-[auto_auto_auto] items-start">
                     {/* Intro */}
-                    {/* <div className="h-[400px] grid grid-cols-1 md:grid-cols-2 gap-4"> */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
                         {/* Right side */}
                         <div className="col-span-1 md:col-start-1 flex justify-center items-center">
@@ -28,7 +27,7 @@ function Content() {
                             {/* Text */}
                             <div className="">
                                 {/* Title */}
-                                <p className="text-2xl leading-relaxed font-semibold text-center md:text-left pb-5 text-stone-800 dark:text-stone-100">
+                                <p className="text-2xl leading-relaxed font-semibold text-center md:text-left pb-5 text-stone-800 dark:text-stone-100 transition-colors duration-300 ease-in-out">
                                     Hi! I'm Caio, a
                                     <span className="inline-block font-bold bg-gradient-to-tr from-amber-400 to-violet-600 bg-clip-text text-transparent pr-2 pl-2">
                                         software engineer
@@ -39,15 +38,19 @@ function Content() {
                                     </span>
                                 </p>
                                 {/* Subtitle */}
-                                <p className="text-lg leading-7 text-center md:text-left text-stone-500 dark:text-stone-400">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <p className="text-lg font-Rubik leading-7 text-center md:text-left text-stone-500 dark:text-stone-400 transition-colors duration-300 ease-in-out">
+                                    Playing video games since a little kid, and been making then since 2020. Always thriving for a friendly and funny working environment.
+                                    <br />
+                                    <span className="inline-block text-lg font-bold font-Rubik leading-7 text-center md:text-left text-stone-500 dark:text-stone-400 pt-6 transition-colors duration-300 ease-in-out">
+                                        ✔️ Unity, Unreal, Custom Engines. 
+                                    </span>
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     {/* Game Projects / Main projects */}
-                    <div className="col-span-full pt-20 bg-transparent text-dark-100 dark:text-light-100"> 
+                    <div className="col-span-full pt-20 bg-transparent text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out"> 
                         {/* Background */}
                         <div className="">
                             <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-3 gap-y-16 gap-x-8 items-start">
@@ -67,7 +70,7 @@ function Content() {
 
                     {/* Side Projects */}
                     <div className="col-span-full pt-20 pb-[4.8rem] bg-transparent"> 
-                        <p className="text-3xl leading-relaxed font-semibold line pb-5 text-stone-800 dark:text-stone-100">
+                        <p className="text-3xl leading-relaxed font-semibold line pb-5 text-stone-800 dark:text-stone-100 transition-colors duration-300 ease-in-out">
                             Side projects
                         </p> 
                         <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-y-16 gap-x-5 items-start">

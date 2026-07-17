@@ -4,7 +4,7 @@ function Footer() {
     return(
         <>
             {/* Background */}
-            <div className="pt-10 pb-5 flex-grow-1 bg-stone-800 dark:bg-stone-100">
+            <div className="pt-10 pb-5 flex-grow-1 bg-stone-800 dark:bg-stone-100 transition-colors duration-300 ease-in-out">
                 {/* Content */}
                 <div className="flex justify-center">
                     <div className="w-[90%] md:w-[916px]">
@@ -20,7 +20,7 @@ function Footer() {
                                     </div>
                                     <div className="row-span-1 flex items-start">
                                         {/* Subtitle */}
-                                        <p className="align-text-top text-left font-sm leading-6 text-stone-400 dark:text-stone-500">
+                                        <p className="align-text-top text-left font-sm leading-6 text-stone-400 dark:text-stone-500 transition-colors duration-300 ease-in-out">
                                             <p>caiovini.aa@gmail.com</p>
                                             <p>This website is best viewed in a desktop</p>
                                             <p>&copy; { new Date().getFullYear() } Caio Vinicius Aguiar Alves</p>

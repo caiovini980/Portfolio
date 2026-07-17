@@ -19,13 +19,13 @@ function SmallPortfolioItem({ title, imageUrl, period, link, description }) {
                     {/* Title */}
                     <div className="flex-1 flex items-center">
                         <a href={ link } target="_blank" rel="noreferrer noopener">
-                            <p className="font-semibold mt-4 text-lg md:text-2xl text-dark-100 dark:text-light-100 ">{ title }</p>
+                            <p className="font-semibold mt-4 text-lg md:text-2xl text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out">{ title }</p>
                         </a>
                     </div>
 
                     {/* Description */}
                     <div className="flex-1 items-center">
-                        <p className="text-normal mt-2 text-stone-500 dark:text-stone-400">{ description }</p>
+                        <p className="text-normal mt-2 text-stone-500 dark:text-stone-400 transition-colors duration-300 ease-in-out">{ description }</p>
                     </div>
                 </div>
             </div>
