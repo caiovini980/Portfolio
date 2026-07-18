@@ -1,10 +1,14 @@
+import Tag, {Colors} from "../components/Tag"
+
 export default [
     {
         Title: "Developer Portfolio",
-        ImageUrl: "./images/placeholder-pink.jpg",
+        ImageUrl: "./logo.png",
         Stack: ["React", "Tailwind", "Vite"],
         Period: "2025",
-        Description: "Placeholder text.",
-        Link: "https://google.com",
-    }
+        Description: "This very own website. Famous to be the project I may never completely finish",
+        Link: "#",
+        tagColor: Colors.BLUE_GREEN,
+        tagText: "React - Tailwind - Vite",
+    },
 ]

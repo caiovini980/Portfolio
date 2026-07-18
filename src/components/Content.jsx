@@ -56,10 +56,10 @@ function Content() {
                     </div>
 
                     {/* Game Projects / Main projects */}
-                    <div className="col-span-full pt-20 bg-transparent text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out"> 
+                    <div className="col-span-1 pt-20 bg-transparent text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out"> 
                         {/* Background */}
                         <div className="">
-                            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-3 gap-y-16 gap-x-8 items-start">
+                            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_auto_auto] gap-y-16 gap-x-8 items-start">
                                 { PortfolioData.map(project => (
                                     <PortfolioItem 
                                         imageUrl = { project.ImageUrl }
@@ -77,11 +77,11 @@ function Content() {
                     </div>
 
                     {/* Side Projects */}
-                    <div className="col-span-full pt-20 pb-[4.8rem] bg-transparent"> 
-                        <p className="text-3xl leading-relaxed font-semibold line pb-5 text-stone-800 dark:text-stone-100 transition-colors duration-300 ease-in-out">
+                    <div className="col-span-full pt-5 bg-transparent"> 
+                        <p className="text-3xl leading-relaxed font-Rubik font-semibold line pb-5 text-stone-800 dark:text-stone-100 transition-colors duration-300 ease-in-out">
                             Side projects
                         </p> 
-                        <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-y-16 gap-x-5 items-start">
+                        <div className='grid grid-cols-2 grid-rows-[auto_auto_auto] md:grid-cols-3 md:grid-rows-[auto_auto_auto] gap-x-5 gap-y-16 items-start'>
                             { SmallPortfolioData.map(project => (
                                 <SmallPortfolioItem 
                                     imageUrl = { project.ImageUrl }
@@ -90,6 +90,8 @@ function Content() {
                                     period= { project.Period }
                                     link = { project.Link } 
                                     description= { project.Description }
+                                    tagColor={project.tagColor}
+                                    tagText={project.tagText}
                                 />
                             )) }
                         </div>
