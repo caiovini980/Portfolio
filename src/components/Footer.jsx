@@ -39,7 +39,7 @@ function Footer() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-1 flex justify-end items-end pb-8">
+                            <div className="col-span-1 flex justify-end items-end">
                                 <a href="https://www.linkedin.com/in/caioaguiar22/" className="font-semibold text-stone-400 dark:text-stone-500 hover:text-light-100 hover:dark:text-dark-100">
                                     <div className="transition-colors duration-300 ease-in-out">
                                         LinkedIn
