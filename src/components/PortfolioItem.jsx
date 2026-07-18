@@ -1,6 +1,8 @@
 // IMPORTANT: Images must be  788x788
 
-function PortfolioItem({ title, imageUrl, period, link, description }) {
+import Tag, {Colors} from "./Tag";
+
+function PortfolioItem({ title, imageUrl, period, link, description, tagColor, tagText }) {
     return (
         <>
             <div>
@@ -15,6 +17,12 @@ function PortfolioItem({ title, imageUrl, period, link, description }) {
                         />
                     </div>
                 </a>
+
+                {tagColor, tagText && (
+                    <div className="flex flex-row pt-7 items-start">
+                        <Tag color={tagColor} text={tagText}></Tag>
+                    </div>
+                )}
 
                 {/* Text area */}
                 <div className="flex flex-col">

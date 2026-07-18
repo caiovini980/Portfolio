@@ -35,9 +35,10 @@ function Content() {
                                     <br />
                                 </p>
 
-                                <div className="flex flex-row leading-7 pt-9 gap-x-3 items-start">
+                                <div className="flex flex-row pt-9 gap-x-3 items-start">
                                     <Tag text={"Unity"} color={Colors.BLUE}></Tag>
                                     <Tag text={"Unreal"} color={Colors.PURPLE}></Tag>
+                                    <Tag text={"Roblox Studio"} color={Colors.GREEN}></Tag>
                                     <Tag text={"Custom Engines"} color={Colors.ORANGE}></Tag>
                                 </div>
                             </div>
@@ -67,6 +68,8 @@ function Content() {
                                         period= { project.Period }
                                         link = { project.Link } 
                                         description= { project.Description }
+                                        tagColor={project.tagColor}
+                                        tagText={project.tagText}
                                     />
                                 )) }
                             </div>
