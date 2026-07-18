@@ -68,7 +68,7 @@ function Header() {
             <div className="sticky top-0 p-10 md:pb-16 pr-14 pl-[5.4rem] pt-[1.7rem] bg-light-100 dark:bg-dark-100 md:bg-transparent md:dark:bg-transparent">
               <div className='flex'>
                 {/* Left side */}
-                <a href="#" className="flex flex-1 font-semibold justify-start items-center text-2xl text-dark-200 dark:text-light-100 hover:text-dark-100 hover:dark:text-stone-500 transition-colors duration-300 ease-in-out">
+                <a href="#" className="flex flex-1 font-semibold justify-start items-center font-Rubik text-2xl text-dark-200 dark:text-light-100 hover:text-dark-100 hover:dark:text-stone-500 transition-colors duration-300 ease-in-out">
                     <img src="./logo.png" alt="" className='h-8 pr-4'/>
                     <div className="transition-colors duration-300 ease-in-out">
                       Caio Aguiar

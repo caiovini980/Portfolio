@@ -4,6 +4,8 @@ import PortfolioItem from "./PortfolioItem";
 import SmallPortfolioData from "../data/SmallPortfolioData";
 import SmallPortfolioItem from "../components/SmallPortfolioItem";
 
+import Tag, {Colors} from "./Tag";
+
 function Content() {
     return (
         <div className="flex justify-center">
@@ -12,22 +14,12 @@ function Content() {
                 <div className="grid grid-rows-[auto_auto_auto] items-start">
                     {/* Intro */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
-                        {/* Right side */}
-                        <div className="col-span-1 md:col-start-1 flex justify-center items-center">
-                            {/* Image/Gif */}
-                            <img 
-                                className="h-44 w-44 md:h-64 md:w-64 rounded-full object-cover shadow-lg transition-transform duration-300 ease-in-out hover:scale-110 shadow-dark-100 dark:shadow-neutral-900" 
-                                src="./images/profile-alt.jpg" 
-                                alt="Profile pic, why not? Right?" 
-                            />
-                        </div>
-
                         {/* Left side */}
-                        <div className="col-span-1 md:col-start-2 flex justify-center items-center text-wrap">
+                        <div className="col-span-1 md:col-start-1 flex justify-center items-center text-wrap">
                             {/* Text */}
                             <div className="">
                                 {/* Title */}
-                                <p className="text-2xl leading-relaxed font-semibold text-center md:text-left pb-5 text-stone-800 dark:text-stone-100 transition-colors duration-300 ease-in-out">
+                                <p className="text-2xl leading-relaxed font-Rubik font-semibold text-center md:text-left pb-5 text-stone-800 dark:text-stone-100 transition-colors duration-300 ease-in-out">
                                     Hi! I'm Caio, a
                                     <span className="inline-block font-bold bg-gradient-to-tr from-amber-400 to-violet-600 bg-clip-text text-transparent pr-2 pl-2">
                                         software engineer
@@ -39,13 +31,26 @@ function Content() {
                                 </p>
                                 {/* Subtitle */}
                                 <p className="text-lg font-Rubik leading-7 text-center md:text-left text-stone-500 dark:text-stone-400 transition-colors duration-300 ease-in-out">
-                                    Playing video games since a little kid, and been making then since 2020. Always thriving for a friendly and funny working environment.
+                                    Playing video games since a little kid, and been making them since 2020. Always thriving for a friendly and funny working environment.
                                     <br />
-                                    <span className="inline-block text-lg font-bold font-Rubik leading-7 text-center md:text-left text-stone-500 dark:text-stone-400 pt-6 transition-colors duration-300 ease-in-out">
-                                        ✔️ Unity, Unreal, Custom Engines. 
-                                    </span>
                                 </p>
+
+                                <div className="flex flex-row leading-7 pt-9 gap-x-3 items-start">
+                                    <Tag text={"Unity"} color={Colors.BLUE}></Tag>
+                                    <Tag text={"Unreal"} color={Colors.PURPLE}></Tag>
+                                    <Tag text={"Custom Engines"} color={Colors.ORANGE}></Tag>
+                                </div>
                             </div>
+                        </div>
+
+                        {/* Right side */}
+                        <div className="col-span-1 md:col-start-2 flex justify-center items-center pt-10 md:pt-0">
+                            {/* Image/Gif */}
+                            <img 
+                                className="h-44 w-44 md:h-64 md:w-64 rounded-full object-cover shadow-lg transition-transform duration-300 ease-in-out hover:scale-110 shadow-dark-100 dark:shadow-neutral-900" 
+                                src="./images/profile-alt.jpg" 
+                                alt="Profile pic, why not? Right?" 
+                            />
                         </div>
                     </div>
 

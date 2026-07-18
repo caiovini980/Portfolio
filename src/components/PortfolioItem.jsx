@@ -21,18 +21,18 @@ function PortfolioItem({ title, imageUrl, period, link, description }) {
                     {/* Title */}
                     <div className="flex-1 flex items-center">
                         <a href={ link } target="_blank" rel="noreferrer noopener">
-                            <p className="font-semibold mt-5 text-lg md:text-2xl text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out">{ title }</p>
+                            <p className="font-semibold font-Rubik mt-5 text-lg md:text-2xl text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out">{ title }</p>
                         </a>
                     </div>
 
                     {/* Period */}
                     <div className="flex-1 flex h-fit items-center">
-                        <p className="text-sm font-semibold mt-3 text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out">{ period }</p>
+                        <p className="text-sm font-Rubik font-semibold mt-3 text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out">{ period }</p>
                     </div>
 
                     {/* Description */}
                     <div className="flex-1 items-center">
-                        <p className="text-normal mt-3 text-stone-500 dark:text-stone-400 transition-colors duration-300 ease-in-out">{ description }</p>
+                        <p className="text-normal font-Rubik mt-3 text-stone-500 dark:text-stone-400 transition-colors duration-300 ease-in-out">{ description }</p>
                     </div>
                 </div> 
             </div>
