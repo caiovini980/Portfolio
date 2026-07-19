@@ -4,6 +4,7 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      // color themes
       colors: {
         'light': {
           100: '#F9F8F6',
@@ -19,10 +20,22 @@ export default {
         
       },
 
+      // fonts
       fontFamily: {
         Roboto: ["Roboto Mono", "serif"],
         Rubik: ["Rubik", "serif"]
-      }
+      },
+
+      // animations
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.2s ease-in-out',
+      },
     },
   },
   plugins: [],

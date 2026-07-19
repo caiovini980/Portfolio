@@ -18,7 +18,7 @@ function PortfolioItem({ title, imageUrl, period, link, description, tagColor, t
                     </div>
                 </a>
 
-                {tagColor, tagText && (
+                {tagColor && tagText && (
                     <div className="flex flex-row pt-7 items-start">
                         <Tag color={tagColor} text={tagText}></Tag>
                     </div>

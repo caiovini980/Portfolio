@@ -1,9 +1,15 @@
 import Tag, {Colors} from "../components/Tag"
 
+// Images
+import project1 from "../assets/mysims-cozy-bundle.jpg" 
+import project2 from "../assets/Space-Tycoon.jpg" 
+import project3 from "../assets/star jump.jpg" 
+import project4 from "../assets/furryworld.png" 
+
 export default [
     {
         Title: "MySims Cozy Bundle",
-        ImageUrl: "./images/mysims-cozy-bundle.jpg",
+        ImageUrl: project1,
         tagColor: Colors.ORANGE,
         tagText: "Custom Engine",
         Period: "2023 - 2024",
@@ -13,7 +19,7 @@ export default [
 
     {
         Title: "Samsung Space Tycoon",
-        ImageUrl: "./images/Space-Tycoon.jpg",
+        ImageUrl: project2,
         tagColor: Colors.GREEN,
         tagText: "Roblox Studio",
         Period: "2022",
@@ -23,7 +29,7 @@ export default [
 
     {
         Title: "Star Jump",
-        ImageUrl: "./images/star jump.jpg",
+        ImageUrl: project3,
         tagColor: Colors.BLUE,
         tagText: "Unity",
         Period: "2021",
@@ -33,7 +39,7 @@ export default [
 
     {
         Title: "Furry World",
-        ImageUrl: "./images/furryworld.png",
+        ImageUrl: project4,
         tagColor: Colors.BLUE,
         tagText: "Unity",
         Period: "2021",

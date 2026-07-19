@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
+import logo from '../assets/logo.png'
+
 const Themes = Object.freeze({
   LIGHT: "light",
   DARK: "dark"
@@ -69,7 +71,7 @@ function Header() {
               <div className='flex'>
                 {/* Left side */}
                 <a href="#" className="flex flex-1 font-semibold justify-start items-center font-Rubik text-2xl text-dark-200 dark:text-light-100 hover:text-dark-100 hover:dark:text-stone-500 transition-colors duration-300 ease-in-out">
-                    <img src="./logo.png" alt="" className='h-8 pr-4'/>
+                    <img src={logo} alt="" className='h-8 pr-4' />
                     <div className="transition-colors duration-300 ease-in-out">
                       Caio
                     </div>

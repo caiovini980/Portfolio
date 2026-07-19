@@ -6,6 +6,8 @@ import SmallPortfolioItem from "../components/SmallPortfolioItem";
 
 import Tag, {Colors} from "./Tag";
 
+import profileImage from "../assets/profile-alt.jpg"
+
 function Content() {
     return (
         <div className="flex justify-center">
@@ -49,7 +51,7 @@ function Content() {
                             {/* Image/Gif */}
                             <img 
                                 className="h-44 w-44 md:h-64 md:w-64 rounded-full object-cover shadow-lg transition-transform duration-300 ease-in-out hover:scale-110 shadow-dark-100 dark:shadow-neutral-900" 
-                                src="./images/profile-alt.jpg" 
+                                src={profileImage}
                                 alt="Profile pic, why not? Right?" 
                             />
                         </div>
