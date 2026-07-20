@@ -65,16 +65,7 @@ function Content() {
                         <div className="">
                             <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_auto_auto] gap-y-16 gap-x-8 items-start">
                                 { PortfolioData.map(project => (
-                                    <PortfolioItem 
-                                        imageUrl = { project.ImageUrl }
-                                        title = { project.Title }
-                                        stack = { project.Stack }
-                                        period= { project.Period }
-                                        link = { project.Link } 
-                                        description= { project.Description }
-                                        tagColor={project.tagColor}
-                                        tagText={project.tagText}
-                                    />
+                                    <PortfolioItem project={project}/>
                                 )) }
                             </div>
                         </div>
@@ -89,12 +80,12 @@ function Content() {
                         <div className='grid grid-cols-2 grid-rows-[auto_auto_auto] md:grid-cols-3 md:grid-rows-[auto_auto_auto] gap-x-5 gap-y-16 items-start'>
                             { SmallPortfolioData.map(project => (
                                 <SmallPortfolioItem 
-                                    imageUrl = { project.ImageUrl }
-                                    title = { project.Title }
-                                    stack = { project.Stack }
-                                    period= { project.Period }
-                                    link = { project.Link } 
-                                    description= { project.Description }
+                                    imageUrl = { project.imageUrl }
+                                    title = { project.title }
+                                    stack = { project.stack }
+                                    period= { project.period }
+                                    link = { project.link } 
+                                    description= { project.shortDescription }
                                     tagColor={project.tagColor}
                                     tagText={project.tagText}
                                 />

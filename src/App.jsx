@@ -17,9 +17,10 @@ function App() {
       {/* Page Content */}
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-          <Route path='/home' element={ <Home />}/>
+          <Route path='' element={ <Home />}/>
           <Route path='/about' element={ <Home />}/>
           <Route path='/contact' element={ <Home />}/>
+          <Route path='/projects/:slug' element={ <Home /> }/>
         </Routes>
       </AnimatePresence>
 

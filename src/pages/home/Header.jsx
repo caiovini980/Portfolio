@@ -81,7 +81,7 @@ function Header() {
                   <div className='grid grid-cols-[auto_auto_auto] gap-x-6 pr-6 font-Rubik text-xl'>
                     <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
                       <NavLink 
-                        to="/home"
+                        to=""
                         className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
                           isActive ? 'text-dark-200 dark:text-light-100' : 'text-gray-400' }`}
                       >
