@@ -1,4 +1,4 @@
-import SocialsData from "../data/SocialsData";
+import SocialsData from "../../data/SocialsData";
 
 function Footer() {
     return(
@@ -14,16 +14,16 @@ function Footer() {
                                 <div className="h-full">
                                     <div className="row-span-1 pb-8 flex items-start">
                                         {/* Title */}
-                                        <span className="inline-block font-bold text-3xl bg-gradient-to-tr from-amber-400 to-violet-600 bg-clip-text text-transparent">
+                                        <span className="inline-block font-bold font-Rubik text-3xl bg-gradient-to-tr from-amber-400 to-violet-600 bg-clip-text text-transparent">
                                             Awesome to see you here!
                                         </span>
                                     </div>
                                     <div className="row-span-1 flex items-start">
                                         {/* Subtitle */}
-                                        <p className="align-text-top text-left font-sm leading-6 text-stone-400 dark:text-stone-500 transition-colors duration-300 ease-in-out">
+                                        <p className="align-text-top text-left font-sm font-Rubik leading-6 text-stone-400 dark:text-stone-500 transition-colors duration-300 ease-in-out">
                                             <p>caiovini.aa@gmail.com</p>
-                                            <p>This website is best viewed in a desktop</p>
-                                            <p>&copy; { new Date().getFullYear() } Caio Vinicius Aguiar Alves</p>
+                                            <p>This website is best viewed in a desktop.</p>
+                                            <p>&copy; { new Date().getFullYear() } Caio Vinicius Aguiar Alves. All rights reserved.</p>
                                             <p className="pt-8">
                                                 All design credits to 
                                                 <span className="pl-1 pr-1">
@@ -33,19 +33,19 @@ function Footer() {
                                                         </div>
                                                     </a>
                                                 </span>
-                                                portfolio
+                                                portfolio.
                                             </p>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-span-1 flex justify-end items-end">
-                                <a href="https://www.linkedin.com/in/caioaguiar22/" className="font-semibold text-stone-400 dark:text-stone-500 hover:text-light-100 hover:dark:text-dark-100">
+                                <a href="https://www.linkedin.com/in/caioaguiar22/" className="font-semibold font-Rubik text-stone-400 dark:text-stone-500 hover:text-light-100 hover:dark:text-dark-100">
                                     <div className="transition-colors duration-300 ease-in-out">
                                         LinkedIn
                                     </div>
                                 </a>
-                                <a href="https://github.com/caiovini980" className="font-semibold text-stone-400 pl-5 dark:text-stone-500 hover:text-light-100 hover:dark:text-dark-100">
+                                <a href="https://github.com/caiovini980" className="font-semibold font-Rubik text-stone-400 pl-5 dark:text-stone-500 hover:text-light-100 hover:dark:text-dark-100">
                                     <div className="transition-colors duration-300 ease-in-out">
                                         Github
                                     </div>

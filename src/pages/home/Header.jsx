@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { Link, NavLink } from 'react-router-dom';
 
-import logo from '../assets/logo.png'
+import logo from '../../assets/logo.png'
 
 const Themes = Object.freeze({
   LIGHT: "light",
@@ -66,11 +67,9 @@ function Header() {
 
     return(
         <>
-            {/* Background */}
-            <div className="sticky top-0 p-10 md:pb-16 pr-14 pl-[5.4rem] pt-[1.7rem] bg-light-100 dark:bg-dark-100 md:bg-transparent md:dark:bg-transparent">
-              <div className='flex'>
+            <div className='flex'>
                 {/* Left side */}
-                <a href="#" className="flex flex-1 font-semibold justify-start items-center font-Rubik text-2xl text-dark-200 dark:text-light-100 hover:text-dark-100 hover:dark:text-stone-500 transition-colors duration-300 ease-in-out">
+                <a href="#" className="flex flex-1 font-semibold justify-start items-center font-Rubik text-2xl text-dark-200 dark:text-light-100 hover:text-dark-100 transition-colors duration-300 ease-in-out">
                     <img src={logo} alt="" className='h-8 pr-4' />
                     <div className="transition-colors duration-300 ease-in-out">
                       Caio
@@ -79,6 +78,35 @@ function Header() {
 
                 {/* Right side */}
                 <div className='flex flex-1 pr-6 justify-end items-center'>
+                  <div className='grid grid-cols-[auto_auto_auto] gap-x-6 pr-6 font-Rubik text-xl text-dark-200 dark:text-light-100'>
+                    <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
+                      <NavLink 
+                        to="/home"
+                        className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
+                          isActive ? 'font-bold text-purple-600 dark:text-yellow-400' : 'font-normal text-dark-200 dark:text-light-100' }`}
+                      >
+                        Home
+                      </NavLink>
+                    </div>
+                    <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
+                      <NavLink 
+                        to="/about"
+                        className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
+                          isActive ? 'font-bold text-purple-600 dark:text-yellow-400' : 'font-normal text-dark-200 dark:text-light-100' }`}
+                      >
+                        About
+                      </NavLink>
+                    </div>
+                    <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
+                      <NavLink 
+                        to="/contact"
+                        className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
+                          isActive ? 'font-bold text-purple-600 dark:text-yellow-400' : 'font-normal text-dark-200 dark:text-light-100' }`}
+                      >
+                        Contact
+                      </NavLink>
+                    </div>
+                  </div>
                     <button
                         type="button"
                         onClick={ handleThemeSwitch }
@@ -88,7 +116,6 @@ function Header() {
                     </button>
                 </div>
               </div>
-            </div>
         </>
         
     )

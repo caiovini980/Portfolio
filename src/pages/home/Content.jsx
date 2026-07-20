@@ -1,17 +1,17 @@
-import PortfolioData from "../data/PortfolioData";
-import PortfolioItem from "./PortfolioItem";
+import PortfolioData from "../../data/PortfolioData";
+import PortfolioItem from "../../components/PortfolioItem";
 
-import SmallPortfolioData from "../data/SmallPortfolioData";
-import SmallPortfolioItem from "../components/SmallPortfolioItem";
+import SmallPortfolioData from "../../data/SmallPortfolioData";
+import SmallPortfolioItem from "../../components/SmallPortfolioItem";
 
-import Tag, {Colors} from "./Tag";
+import Tag, {Colors} from "../../components/Tag";
 
-import profileImage from "../assets/profile-alt.jpg"
+import profileImage from "../../assets/profile-alt.jpg"
 
 function Content() {
     return (
         <div className="flex justify-center">
-            <div className="w-[90%] md:w-[916px]">
+            <div className="w-[90%] md:w-[916px] pt-10">
             {/* Sections */}
                 <div className="grid grid-rows-[auto_auto_auto] items-start">
                     {/* Intro */}
@@ -33,7 +33,7 @@ function Content() {
                                 </p>
                                 {/* Subtitle */}
                                 <p className="text-lg font-Rubik leading-7 text-center md:text-left text-stone-500 dark:text-stone-400 transition-colors duration-300 ease-in-out">
-                                    Playing video games since a little kid, and been making them since 2020. Always thriving for a friendly and funny working environment.
+                                    Playing video games since a little kid, and been making them since 2020. I've been in AAA, AA and indie teams. Always thriving for a friendly and funny working environment.
                                     <br />
                                 </p>
 
@@ -60,7 +60,7 @@ function Content() {
 
                     {/* Game Projects / Main projects */}
                     <div className="col-span-1 pt-16 bg-transparent text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out"> 
-                        <div class="border-t-2 pb-20"></div>
+                        <div className="border-t-2 pb-20"></div>
                         {/* Background */}
                         <div className="">
                             <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_auto_auto] gap-y-16 gap-x-8 items-start">
@@ -82,7 +82,7 @@ function Content() {
 
                     {/* Side Projects */}
                     <div className="col-span-full pt-5 bg-transparent"> 
-                        <div class="border-t-2 pb-16"></div>
+                        <div className="border-t-2 pb-16"></div>
                         <p className="text-3xl leading-relaxed font-Rubik font-semibold line pb-5 text-stone-800 dark:text-stone-100 transition-colors duration-300 ease-in-out">
                             Side projects
                         </p> 
