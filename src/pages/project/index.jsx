@@ -1,9 +1,12 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useParams } from "react-router-dom";
+
+import PortfolioData from '../../data/PortfolioData';
+
 import Header from "./Header"
 import Footer from "./Footer";
 import Content from "./Content";
-
-import { motion } from 'framer-motion';
 
 const container = {
   hidden: {},
@@ -20,9 +23,17 @@ const item = {
 };
 
 function Home() {
+  const { slug } = useParams()
+  const project = PortfolioData.find((project) => project.slug === slug)
+
+  if (!project) {
+    // Error page
+    return <p>ERROR PAGE - PROJECT NOT FOUND</p>
+  }
+
   useEffect(() => {
-    document.title = `Caio | Software Engineer for Games`
-  });
+    document.title = `Caio | ${project.title}`
+  }, [project]);
 
   return (
       <motion.div 
