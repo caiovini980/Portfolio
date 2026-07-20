@@ -1,4 +1,4 @@
-import SocialsData from "../../data/SocialsData";
+import SocialsData from "../../data/SocialsData"
 
 function Footer() {
     return(

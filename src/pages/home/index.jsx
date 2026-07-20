@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { useEffect } from "react"
 import Header from "./Header"
-import Footer from "./Footer";
-import Content from "./Content";
+import Footer from "./Footer"
+import Content from "./Content"
 
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 const container = {
   hidden: {},

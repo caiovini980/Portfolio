@@ -1,7 +1,7 @@
 // IMPORTANT: Images must be  788x788
 
-import { Link } from "react-router-dom";
-import Tag, {Colors} from "./Tag";
+import { Link } from "react-router-dom"
+import Tag, {Colors} from "./Tag"
 
 function PortfolioItem({ project }) {
     return (
@@ -29,9 +29,9 @@ function PortfolioItem({ project }) {
                 <div className="flex flex-col">
                     {/* Title */}
                     <div className="flex-1 flex">
-                        <a href={ project.link } target="_blank" rel="noreferrer noopener">
+                        <Link to={ `/projects/${project.slug}` }>
                             <p className="font-semibold text-start font-Rubik mt-2 text-lg md:text-2xl text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out">{ project.title }</p>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Period */}

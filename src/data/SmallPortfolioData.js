@@ -13,5 +13,6 @@ export default [
         link: "https://github.com/caiovini980/Portfolio",
         tagColor: Colors.BLUE_GREEN,
         tagText: "React - Tailwind - Vite",
+        slug: "portfolio-website"
     },
 ]

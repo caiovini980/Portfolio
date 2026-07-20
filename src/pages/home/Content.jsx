@@ -1,10 +1,10 @@
-import PortfolioData from "../../data/PortfolioData";
-import PortfolioItem from "../../components/PortfolioItem";
+import PortfolioData from "../../data/PortfolioData"
+import PortfolioItem from "../../components/PortfolioItem"
 
-import SmallPortfolioData from "../../data/SmallPortfolioData";
-import SmallPortfolioItem from "../../components/SmallPortfolioItem";
+import SmallPortfolioData from "../../data/SmallPortfolioData"
+import SmallPortfolioItem from "../../components/SmallPortfolioItem"
 
-import Tag, {Colors} from "../../components/Tag";
+import Tag, {Colors} from "../../components/Tag"
 
 import profileImage from "../../assets/profile-alt.jpg"
 
@@ -65,7 +65,7 @@ function Content() {
                         <div className="">
                             <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_auto_auto] gap-y-16 gap-x-8 items-start">
                                 { PortfolioData.map(project => (
-                                    <PortfolioItem project={project}/>
+                                    <PortfolioItem project={project} />
                                 )) }
                             </div>
                         </div>
@@ -79,16 +79,7 @@ function Content() {
                         </p> 
                         <div className='grid grid-cols-2 grid-rows-[auto_auto_auto] md:grid-cols-3 md:grid-rows-[auto_auto_auto] gap-x-5 gap-y-16 items-start'>
                             { SmallPortfolioData.map(project => (
-                                <SmallPortfolioItem 
-                                    imageUrl = { project.imageUrl }
-                                    title = { project.title }
-                                    stack = { project.stack }
-                                    period= { project.period }
-                                    link = { project.link } 
-                                    description= { project.shortDescription }
-                                    tagColor={project.tagColor}
-                                    tagText={project.tagText}
-                                />
+                                <SmallPortfolioItem project={project} />
                             )) }
                         </div>
                     </div>

@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { useParams } from "react-router-dom";
+import { useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { useParams } from "react-router-dom"
 
-import PortfolioData from '../../data/PortfolioData';
+import PortfolioData from '../../data/PortfolioData'
 
 import Header from "./Header"
-import Footer from "./Footer";
-import Content from "./Content";
+import Footer from "./Footer"
+import Content from "./Content"
 
 const container = {
   hidden: {},

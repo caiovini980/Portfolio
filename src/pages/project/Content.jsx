@@ -1,9 +1,7 @@
-
-
 function Content() {
     return (
         <div className="">
-            Caio
+            Project!
         </div>
     )
 }

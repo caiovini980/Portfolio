@@ -1,12 +1,13 @@
-import { AnimatePresence } from 'framer-motion';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion'
+import { Routes, Route, Link, useLocation } from 'react-router-dom'
 
-import Header from './pages/home/Header';
-import Footer from './pages/home/Footer';
+import Header from './pages/home/Header'
+import Footer from './pages/home/Footer'
 
 // Pages
-import Home from './pages/home/index';
-import Project from './pages/project/index';
+import Home from './pages/home/index'
+import Project from './pages/project/index'
+import SideProject from './pages/side-project/index'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path='/about' element={ <Home />}/>
           <Route path='/contact' element={ <Home />}/>
           <Route path='/projects/:slug' element={ <Project /> }/>
+          <Route path='/side-projects/:slug' element={ <SideProject /> }/>
         </Routes>
       </AnimatePresence>
 

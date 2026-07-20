@@ -5,7 +5,7 @@ import App from './App.jsx'
 import './styles/tailwind.css'
 
 if ('scrollRestoration' in history) {
-  history.scrollRestoration = 'manual';
+  history.scrollRestoration = 'manual'
 }
 
 window.addEventListener('load', () => {
