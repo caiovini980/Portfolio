@@ -60,7 +60,7 @@ function Content() {
 
                     {/* Game Projects / Main projects */}
                     <div className="col-span-1 pt-16 bg-transparent text-dark-100 dark:text-light-100 transition-colors duration-300 ease-in-out"> 
-                        <div className="border-t-2 pb-20"></div>
+                        <div className="border-t-2 pb-20 border-gray-200 dark:border-gray-800 transition-colors duration-300 ease-in-out"></div>
                         {/* Background */}
                         <div className="">
                             <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_auto_auto] gap-y-16 gap-x-8 items-start">
@@ -82,7 +82,7 @@ function Content() {
 
                     {/* Side Projects */}
                     <div className="col-span-full pt-5 bg-transparent"> 
-                        <div className="border-t-2 pb-16"></div>
+                        <div className="border-t-2 pb-16 border-gray-200 dark:border-gray-800 transition-colors duration-300 ease-in-out"></div>
                         <p className="text-3xl leading-relaxed font-Rubik font-semibold line pb-5 text-stone-800 dark:text-stone-100 transition-colors duration-300 ease-in-out">
                             Side projects
                         </p> 

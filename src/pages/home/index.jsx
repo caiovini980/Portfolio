@@ -24,7 +24,7 @@ function Home() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="min-h-screen min-w-screen font-normal bg-light-100 dark:bg-dark-100">
+        className="min-h-screen min-w-screen font-normal bg-light-100 dark:bg-dark-100 transition-colors duration-300 ease-in-out">
             <motion.main variants={item}>
                 <Content />
             </motion.main>

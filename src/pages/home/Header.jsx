@@ -78,12 +78,12 @@ function Header() {
 
                 {/* Right side */}
                 <div className='flex flex-1 pr-6 justify-end items-center'>
-                  <div className='grid grid-cols-[auto_auto_auto] gap-x-6 pr-6 font-Rubik text-xl text-dark-200 dark:text-light-100'>
+                  <div className='grid grid-cols-[auto_auto_auto] gap-x-6 pr-6 font-Rubik text-xl'>
                     <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
                       <NavLink 
                         to="/home"
                         className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
-                          isActive ? 'font-bold text-purple-600 dark:text-yellow-400' : 'font-normal text-dark-200 dark:text-light-100' }`}
+                          isActive ? 'text-dark-200 dark:text-light-100' : 'text-gray-400' }`}
                       >
                         Home
                       </NavLink>
@@ -92,7 +92,7 @@ function Header() {
                       <NavLink 
                         to="/about"
                         className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
-                          isActive ? 'font-bold text-purple-600 dark:text-yellow-400' : 'font-normal text-dark-200 dark:text-light-100' }`}
+                          isActive ? 'text-dark-200 dark:text-light-100' : 'text-gray-400' }`}
                       >
                         About
                       </NavLink>
@@ -101,7 +101,7 @@ function Header() {
                       <NavLink 
                         to="/contact"
                         className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
-                          isActive ? 'font-bold text-purple-600 dark:text-yellow-400' : 'font-normal text-dark-200 dark:text-light-100' }`}
+                          isActive ? 'text-dark-200 dark:text-light-100' : 'text-gray-400' }`}
                       >
                         Contact
                       </NavLink>
