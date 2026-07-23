@@ -4,8 +4,6 @@ import { useParams } from "react-router-dom"
 
 import SmallPortfolioData from '../../data/SmallPortfolioData'
 
-import Header from "./Header"
-import Footer from "./Footer"
 import Content from "./Content"
 
 const container = {

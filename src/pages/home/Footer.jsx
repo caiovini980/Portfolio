@@ -1,5 +1,3 @@
-import SocialsData from "../../data/SocialsData"
-
 function Footer() {
     return(
         <>
