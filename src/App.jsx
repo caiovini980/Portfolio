@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       {/* Nav Bar */}
-      <nav className='sticky top-0 p-10 md:pb-6 pr-14 pl-[5.4rem] pt-[1.7rem] bg-light-100 dark:bg-dark-100 transition-colors duration-300 ease-in-out'>
+      <nav className='sticky top-0 p-10 md:pb-6 pr-0 pl-8 md:pr-14 md:pl-[5.4rem] pt-[1.7rem] bg-light-100 dark:bg-dark-100 transition-colors duration-300 ease-in-out'>
         <Header />
       </nav>
 
