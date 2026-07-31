@@ -11,7 +11,7 @@ import profileImage from "../../assets/profile-alt.jpg"
 function Content() {
     return (
         <div className="flex justify-center">
-            <div className="w-[90%] md:w-[916px] pt-10">
+            <div className="w-[90%] md:w-[916px] pt-0">
             {/* Sections */}
                 <div className="grid grid-rows-[auto_auto_auto] items-start">
                     {/* Intro */}

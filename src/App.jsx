@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 
@@ -12,11 +13,25 @@ import SideProject from './pages/side-project/index'
 
 function App() {
   const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
       {/* Nav Bar */}
-      <nav className='sticky top-0 p-10 md:pb-6 pr-0 pl-8 md:pr-14 md:pl-[5.4rem] pt-[1.7rem] bg-light-100 dark:bg-dark-100 transition-colors duration-300 ease-in-out'>
+      <nav className={`sticky top-0 md:pt-[1.7rem] md:pr-14 md:pl-[5.4rem] pt-3 pl-8 pb-3 md:pb-6 bg-light-100 dark:bg-dark-100 border-b-2 transition-colors duration-300 ease-in-out ${
+        scrolled ? 'border-gray-200 dark:border-gray-800' : 'border-transparent'
+      }`}>
         <Header />
       </nav>
 
