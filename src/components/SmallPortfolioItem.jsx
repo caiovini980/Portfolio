@@ -1,6 +1,6 @@
 
-import { Link } from "react-router-dom";
-import Tag, {Colors} from "./Tag";
+import { Link } from "react-router-dom"
+import Tag, {Colors} from "./Tag"
 
 function SmallPortfolioItem({ project }) {
     return (

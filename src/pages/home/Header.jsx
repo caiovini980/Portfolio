@@ -42,8 +42,48 @@ const moonIcon = (
   </svg>
 );
 
+const menuIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    className="w-7 h-7"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+    />
+  </svg>
+);
+
+const closeIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    className="w-7 h-7"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M6 18L18 6M6 6l12 12"
+    />
+  </svg>
+);
+
+const navLinkClassName = ({ isActive }) =>
+  `transition-transform duration-200 hover:scale-110 ${
+    isActive ? 'text-dark-200 dark:text-light-100' : 'text-gray-400'
+  }`;
+
 function Header() {
     const [theme, setTheme] = useState(null);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         setTheme(Themes.LIGHT);
@@ -67,7 +107,7 @@ function Header() {
 
     return(
         <>
-            <div className='flex'>
+            <div className='relative z-50 flex'>
                 {/* Left side */}
                 <a href="#" className="flex flex-1 font-semibold justify-start items-center font-Rubik text-2xl text-dark-200 dark:text-light-100 hover:text-dark-100 transition-colors duration-300 ease-in-out">
                     <img src={logo} alt="" className='h-8 pr-4' />
@@ -78,35 +118,25 @@ function Header() {
 
                 {/* Right side */}
                 <div className='flex flex-1 pr-6 justify-end items-center'>
-                  <div className='grid grid-cols-[auto_auto_auto] gap-x-6 pr-6 font-Rubik text-xl'>
-                    <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
-                      <NavLink 
-                        to=""
-                        className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
-                          isActive ? 'text-dark-200 dark:text-light-100' : 'text-gray-400' }`}
-                      >
-                        Home
-                      </NavLink>
+                  {/* Desktop nav + theme toggle */}
+                  <div className='hidden md:flex items-center'>
+                    <div className='grid grid-cols-[auto_auto_auto] gap-x-6 pr-6 font-Rubik text-xl'>
+                      <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
+                        <NavLink to="" className={navLinkClassName}>
+                          Home
+                        </NavLink>
+                      </div>
+                      <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
+                        <NavLink to="/about" className={navLinkClassName}>
+                          About
+                        </NavLink>
+                      </div>
+                      <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
+                        <NavLink to="/contact" className={navLinkClassName}>
+                          Contact
+                        </NavLink>
+                      </div>
                     </div>
-                    <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
-                      <NavLink 
-                        to="/about"
-                        className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
-                          isActive ? 'text-dark-200 dark:text-light-100' : 'text-gray-400' }`}
-                      >
-                        About
-                      </NavLink>
-                    </div>
-                    <div className='transition-transform duration-200 hover:scale-110 active:scale-95'>
-                      <NavLink 
-                        to="/contact"
-                        className={({isActive}) => `transition-transform duration-200 hover:scale-110 ${
-                          isActive ? 'text-dark-200 dark:text-light-100' : 'text-gray-400' }`}
-                      >
-                        Contact
-                      </NavLink>
-                    </div>
-                  </div>
                     <button
                         type="button"
                         onClick={ handleThemeSwitch }
@@ -114,10 +144,45 @@ function Header() {
                     >
                       {theme === Themes.DARK ? sunIcon : moonIcon}
                     </button>
+                  </div>
+
+                  {/* Mobile hamburger toggle */}
+                  <button
+                    type="button"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label={menuOpen ? "Close menu" : "Open menu"}
+                    className="flex md:hidden justify-center items-center h-14 w-14 text-dark-200 dark:text-light-100 transition-transform duration-300 ease-in-out hover:scale-110"
+                  >
+                    {menuOpen ? closeIcon : menuIcon}
+                  </button>
                 </div>
               </div>
+
+              {/* Mobile fullscreen overlay */}
+              <div
+                className={`fixed inset-0 z-40 flex md:hidden flex-col items-center justify-center gap-10 bg-light-100 dark:bg-dark-200 font-Rubik text-3xl transition-opacity duration-300 ease-in-out ${
+                  menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+                }`}
+              >
+                <NavLink to="" className={navLinkClassName} onClick={() => setMenuOpen(false)}>
+                  Home
+                </NavLink>
+                <NavLink to="/about" className={navLinkClassName} onClick={() => setMenuOpen(false)}>
+                  About
+                </NavLink>
+                <NavLink to="/contact" className={navLinkClassName} onClick={() => setMenuOpen(false)}>
+                  Contact
+                </NavLink>
+                <button
+                    type="button"
+                    onClick={() => { handleThemeSwitch(); setMenuOpen(false); }}
+                    className="flex justify-center items-center h-14 w-14 bg-purple-400 dark:bg-amber-400 text-lg p-1 rounded-md transition-transform duration-300 ease-in-out hover:scale-110"
+                >
+                  {theme === Themes.DARK ? sunIcon : moonIcon}
+                </button>
+              </div> 
         </>
-        
+
     )
 }
 
