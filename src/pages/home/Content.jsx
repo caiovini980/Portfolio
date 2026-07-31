@@ -37,7 +37,7 @@ function Content() {
                                     <br />
                                 </p>
 
-                                <div className="flex flex-row pt-9 gap-x-3 items-start">
+                                <div className="flex flex-row pt-9 gap-x-3 justify-center md:justify-start">
                                     <Tag text={"Unity"} color={Colors.BLUE}></Tag>
                                     <Tag text={"Unreal"} color={Colors.PURPLE}></Tag>
                                     <Tag text={"Roblox Studio"} color={Colors.GREEN}></Tag>
