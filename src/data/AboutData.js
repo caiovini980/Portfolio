@@ -1,8 +1,8 @@
 export default {
     story: [
-        "Hi there! **I'm Caio**, and **I like creating things, tell stories and help others**. Always had a keen eye for detail and maybe that, in addition to have a mother who worked with computers and a father who was a math teacher, got me into creating games and be so interested in UI (or maybe is just my artistic self standing out since I cannot draw).",
-        "While I'm not so good at writing things (yet), I really believe there are multiple ways to tell stories people can interact and learn something. And that's the great thing about creating games. Games are about telling stories and live amazing experiences in a interactive way.",
-        "Started back in 2020 working only with Unity, but later I started to enjoy the whole process and opened my mind to any tech that helps me to create. I thrive when I'm a bridge between technical and non-technical areas and enjoy getting in between the implementation of scalable easy-to-use interfaces and their design process.",
+        "**I like creating things, tell stories and help others**. Always had a keen eye for detail and maybe that, in addition to have a mother who worked with computers and a father who was a math teacher, got me into creating games and be so interested in UI (or maybe is just my artistic self standing out since I cannot draw).",
+        "While I'm not so good at writing things (yet), I really believe there are multiple ways to tell stories people can interact and learn from. That's the greatest thing about creating games. Games are about telling stories in a more interactive way.",
+        "I started back in 2020 working only with Unity, but later I began to enjoy the whole process and opened my mind to any tech that helps me create. I thrive when I link technical and non-technical areas and enjoy being between the implementation of scalable easy-to-use interfaces/mechanics and their design process.",
         "In my spare time, you can usually find me reading, walking with my dog, hanging out with my wife, playing tabletop RPGs with my friends and baking something on weekends."
     ],
 
@@ -27,7 +27,7 @@ export default {
 
     experience: [
         {
-            company: "Globant",
+            company: "Globant ↗",
             website: "https://www.globant.com/",
             roles: [
                 {
@@ -38,7 +38,7 @@ export default {
             ],
         },
         {
-            company: "Kokku",
+            company: "Kokku ↗",
             website: "https://kokkugames.com/",
             roles: [
                 {
