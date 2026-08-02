@@ -7,6 +7,7 @@ import Footer from './pages/home/Footer'
 
 // Pages
 import Home from './pages/home/index'
+import About from './pages/about/index'
 import Project from './pages/project/index'
 import SideProject from './pages/side-project/index'
 
@@ -39,7 +40,7 @@ function App() {
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path='' element={ <Home />}/>
-          <Route path='/about' element={ <Home />}/>
+          <Route path='/about' element={ <About />}/>
           <Route path='/contact' element={ <Home />}/>
           <Route path='/projects/:slug' element={ <Project /> }/>
           <Route path='/side-projects/:slug' element={ <SideProject /> }/>
