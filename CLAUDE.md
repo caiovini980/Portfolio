@@ -41,3 +41,9 @@ Images referenced by data files live in `src/assets/` and are imported directly 
 **Theming**: Dark mode is class-based (`darkMode: "class"` in `tailwind.config.js`). `pages/home/Header.jsx` owns the only theme toggle: it sets `light`/`dark` on `document.documentElement.classList` and swaps a sun/moon icon. Theme state is local to that component (not persisted or synced elsewhere) and always initializes to light on mount. Custom Tailwind theme tokens: `light.100/200`, `dark.100/200/300` colors, `Roboto`/`Rubik` font families, and a `fadeIn` keyframe/animation.
 
 **Build config**: `vite.config.js` sets `base: ''` (relative asset paths, required for GitHub Pages under a subpath/custom domain). `package.json` sets `homepage: caiovini980.github.io` for `gh-pages`.
+
+**Rules**: 
+- Never make any operation regarding Github or any version control system.
+- Always ask for permission before any change.
+- Most of the changes will happen in the `src/` folder and the files on the root.
+- After a change, only ask to use `npm run dev`.
